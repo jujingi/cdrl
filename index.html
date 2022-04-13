@@ -123,24 +123,10 @@
       <h2 class="text-center">
         Results
       </h2>
-      <h4>View Synthesis from 3 Input Views</h4>
+      <h4>Change Pair Result</h4>
       <p>
         While mip-NeRF leads to degenerate view synthesis and predicted scene geometry, our method enables realistic
         view synthesis from 3 input views.
-      </p>
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 gallery">
-          <div class="embed-responsive embed-responsive-21by9">
-            <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="gfx/room_videos/n3_text.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <h4>View Synthesis from 6 Input Views</h4>
-      <p>
-        For 6 input views, mip-NeRF improves but predicted renderings and the optimized scene geometry still contain
-        floating artifacts. Our approach leads to smooth predicted scene geometry and realistic novel views.
       </p>
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 gallery">
@@ -151,7 +137,21 @@
           </div>
         </div>
       </div>
-      <h4>View Synthesis from 9 Input Views</h4>
+      <h4>View Synthesis from 6 Input Views</h4>
+      <!--<p>
+        For 6 input views, mip-NeRF improves but predicted renderings and the optimized scene geometry still contain
+        floating artifacts. Our approach leads to smooth predicted scene geometry and realistic novel views.
+      </p>-->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 gallery">
+          <div class="embed-responsive embed-responsive-21by9">
+            <video controls loop muted autoplay class="embed-responsive-item">
+              <source src="video/Threshold_2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <h4>Unchange Pair Result</h4>
       <p>
         For 9 input views, mip-NeRF and our method both lead to high-quality view synthesis. For mip-NeRF, small
         floating artfiacts for far-away novel views near the table are still visible while our predicted scene geometry
