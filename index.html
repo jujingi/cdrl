@@ -101,21 +101,9 @@
       </div>
       <div style="margin-top: 35px;">
         <p>
-          NeRF optimizes the reconstruction loss for a given set of input images (<span class="text-primary">blue
-            cameras</span>).
-          For sparse inputs, however, this leads to degenerate solutions.
-          In this work, we propose to sample unobserved views (<span class="text-danger">red cameras</span>) and <span
-            style="font-weight: bold;"> regularize the geometry and appearance of patches</span> rendered from those
-          views.
-          More specifically, we cast rays through the scene and render patches from unobserved viewpoints for a given
-          radiance field f.
-          We then regularize appearance by feeding the predicted RGB patches through a trained normalizing flow model
-          phi
-          and maximizing predicted log-likelihood.
-          We regularize geometry by enforcing a smoothness loss on the rendered depth patches.
-          Further, we avoid divergence at early stages of optimization by annealing the scene sampling space ofter the first iterations.
-          Our approach leads to 3D-consistent representations <span style="font-weight: bold;">even for sparse input
-            scenarios with as few as 3 input views</span> from which realistic novel views can be rendered.
+           CDRL is trained to reconstruct X<sup>t1<sup> by receiving a pseudo-unchanged pair during training, and when a changed 
+          bi-temporal pair that is not learned during training is input during inference, the reconstruction loss is large in the 
+          region with large structure change.
         </p>
       </div>
     </div>
@@ -161,7 +149,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12 gallery">
           <div class="embed-responsive embed-responsive-21by9">
             <video controls loop muted autoplay class="embed-responsive-item">
-              <source src="video/Threshold_2.mp4" type="video/mp4">
+              <source src="video/unchange_Threshold_1.mp4" type="video/mp4">
             </video>
           </div>
         </div>
